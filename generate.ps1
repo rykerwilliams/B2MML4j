@@ -1,0 +1,2 @@
+PS C:\Users\rj\git\ignitionB2MML\B2MML_V6\_fromMESA\Schema> foreach($i in $filepath) { xjc $i -b c:\users\rj\git\ignitio
+nB2MML\B2MML_V6\xjc\B2MML4j_bindings.xml -d c:\users\rj\git\ignitionB2MML\B2MML_V6\xjc -extension }
