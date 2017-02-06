@@ -8,6 +8,7 @@
 
 package org.mesa.xml.b2mml;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -45,7 +46,9 @@ import javax.xml.bind.annotation.XmlType;
     "description",
     "workMaster"
 })
-public class WorkMasterRecordType {
+public class WorkMasterRecordType
+    implements Serializable
+{
 
     @XmlElement(name = "EntryID", required = true)
     protected IdentifierType entryID;

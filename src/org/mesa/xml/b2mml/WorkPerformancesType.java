@@ -8,6 +8,7 @@
 
 package org.mesa.xml.b2mml;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -39,7 +40,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "WorkPerformancesType", propOrder = {
     "workPerformanceRecord"
 })
-public class WorkPerformancesType {
+public class WorkPerformancesType
+    implements Serializable
+{
 
     @XmlElement(name = "WorkPerformanceRecord")
     protected List<WorkPerformanceRecordType> workPerformanceRecord;

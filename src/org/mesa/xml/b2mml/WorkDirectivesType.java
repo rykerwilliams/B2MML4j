@@ -8,6 +8,7 @@
 
 package org.mesa.xml.b2mml;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -39,7 +40,9 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "WorkDirectivesType", propOrder = {
     "workDirectiverRecord"
 })
-public class WorkDirectivesType {
+public class WorkDirectivesType
+    implements Serializable
+{
 
     @XmlElement(name = "WorkDirectiverRecord")
     protected List<WorkDirectiveRecordType> workDirectiverRecord;

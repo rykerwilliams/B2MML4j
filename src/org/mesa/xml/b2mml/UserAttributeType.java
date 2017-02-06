@@ -8,6 +8,7 @@
 
 package org.mesa.xml.b2mml;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -43,7 +44,9 @@ import javax.xml.bind.annotation.XmlType;
     "description",
     "value"
 })
-public class UserAttributeType {
+public class UserAttributeType
+    implements Serializable
+{
 
     @XmlElement(name = "AttributeID", required = true)
     protected CodeType attributeID;

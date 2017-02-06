@@ -8,6 +8,7 @@
 
 package org.mesa.xml.b2mml;
 
+import java.io.Serializable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -39,7 +40,9 @@ import javax.xml.bind.annotation.XmlType;
     "relative",
     "offsetTime"
 })
-public class TimeSpecificationType {
+public class TimeSpecificationType
+    implements Serializable
+{
 
     @XmlElement(name = "Relative")
     protected Boolean relative;
